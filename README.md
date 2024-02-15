@@ -7,3 +7,4 @@ The camera has been moved directly above the map so no player is at a disadvanta
 
 The map has been made slightly bigger so it looks better in the rectangular camera space.
 
+The changed Game design tools are Goal because you can now try to knock the other person off of the map, Direct action becuase of the Dash and Skill becuse new movement tequniques makes there a larger amount of skill that can be used
