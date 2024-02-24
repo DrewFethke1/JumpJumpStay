@@ -45,11 +45,11 @@ public class SecondPlayerController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.J))
         {
-            horizontalInput = -1f;
+            horizontalInput = 1f;
         }
         if (Input.GetKey(KeyCode.L))
         {
-            horizontalInput = 1f;
+            horizontalInput = -1f;
         }
 
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
