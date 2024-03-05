@@ -1,5 +1,7 @@
-using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
+using UnityEngine;
+
 
 public class ScoreDisplay : MonoBehaviour
 {
@@ -11,18 +13,18 @@ public class ScoreDisplay : MonoBehaviour
 
     void Awake()
     {
-        
+
         if (player1ScoreText == null || player2ScoreText == null)
         {
             Debug.LogError("TextMeshPro Text objects are not assigned!");
             return;
         }
 
-      
+
         UpdateHUD();
     }
 
-   
+
     void UpdateHUD()
     {
         player1ScoreText.text = "Player 1 Score: " + player1Score.ToString();

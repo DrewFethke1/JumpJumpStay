@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SecondPlayerController : MonoBehaviour
 {
-    public float movementSpeed = 5f;
+    public float movementSpeed2 = 5f;
     public float jumpForce = 7f;
     public float dashDistance = 5f;
     public float dashDuration = 0.2f;
@@ -55,7 +55,7 @@ public class SecondPlayerController : MonoBehaviour
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
         moveDirection.y = 0f; // Prevents moving vertically
 
-        transform.position += moveDirection.normalized * movementSpeed * Time.deltaTime;
+        transform.position += moveDirection.normalized * movementSpeed2 * Time.deltaTime;
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.O) && isGrounded && !hasJumped)
@@ -79,7 +79,7 @@ public class SecondPlayerController : MonoBehaviour
         // Backwards Movement (K)
         if (Input.GetKeyDown(KeyCode.K))
         {
-            transform.position -= transform.forward * movementSpeed * Time.deltaTime;
+            transform.position -= transform.forward * movementSpeed2 * Time.deltaTime;
         }
 
         // Check if player has fallen off the map
@@ -111,7 +111,7 @@ public class SecondPlayerController : MonoBehaviour
 
         while (dashDistanceTravelled < dashDistance)
         {
-            float dashDistanceThisFrame = movementSpeed * Time.deltaTime * 10; // Increased speed for dash
+            float dashDistanceThisFrame = movementSpeed2 * Time.deltaTime * 10; // Increased speed for dash
             dashDistanceTravelled += dashDistanceThisFrame;
             transform.position += dashDirection * dashDistanceThisFrame;
             yield return null;
