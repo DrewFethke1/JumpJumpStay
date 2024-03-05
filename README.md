@@ -10,3 +10,9 @@ The map has been made slightly bigger so it looks better in the rectangular came
 The changed Game design tools are Goal because you can now try to knock the other person off of the map, Direct action becuase of the Dash and Skill becuse new movement tequniques makes there a larger amount of skill that can be used
 
 Added simple UI to display each players scores and fixed some issues with both players scroing at same time
+
+
+
+Added cubes that have rigid body
+Added orbs that whn collected increases the players speed by 25% but this is not always good
+Added an inventory manager that can track the both of the players scores as well as displaying them
