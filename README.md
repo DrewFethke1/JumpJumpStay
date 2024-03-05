@@ -16,7 +16,7 @@ Added simple UI to display each players scores and fixed some issues with both p
 Added cubes that have rigid body
 
 
-Added orbs that whn collected increases the players speed by 25% but this is not always good
+Added orbs that when collected increases the players speed by 25% but this is not always good
 
 
-Added an inventory manager that can track the both of the players scores as well as displaying them
+Added an inventory manager that can track both of the players scores as well as displaying them
