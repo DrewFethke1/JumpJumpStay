@@ -20,3 +20,22 @@ Added orbs that when collected increases the players speed by 25% but this is no
 
 
 Added an inventory manager that can track both of the players scores as well as displaying them
+
+
+
+Inventory manager was doing no good for the game and is useless for the context of the gameplay so I switched back to score
+
+Cubes now reduce the speed of the other player by 25% when pushed off
+
+Changed points to health and when one player lose 10 points they get pushed off the map and die
+
+Game now resets on player death and when a player dies it give the other player a win, Wins save after reset
+
+Both players speed sightly increases over time
+
+Players are now cubes with updated box coliders and overhauled the way movement works
+
+When two players come into contact they both will be pused back by a factor of the other players speed
+
+Gameplay is now a 2 player stradigy about trying to figure out how to knock off the other player using speed management as you can manage both the speed of yourself or the opponent, players are still able to jump over each to reduce there health as another way of fighting the opponent
+
