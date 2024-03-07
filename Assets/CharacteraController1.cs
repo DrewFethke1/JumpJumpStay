@@ -1,5 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class CharacterControllerAdvanced : MonoBehaviour
 {
@@ -83,8 +86,17 @@ public class CharacterControllerAdvanced : MonoBehaviour
         {
             Debug.Log("PLAYER 1 HAS BEEN KILLED");
             gameObject.SetActive(false); // Disable the player object
+            RestartLevel();
+            FindObjectOfType<ScoreDisplay>().IncrementPlayer1Win();
         }
+
     }
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
 
     void FixedUpdate()
     {

@@ -1,5 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class SecondPlayerController : MonoBehaviour
 {
@@ -87,7 +90,14 @@ public class SecondPlayerController : MonoBehaviour
         {
             Debug.Log("PLAYER 2 HAS BEEN KILLED");
             gameObject.SetActive(false); // Disable the player object
+            RestartLevel();
+            FindObjectOfType<ScoreDisplay>().IncrementPlayer2Win();
         }
+     
+    }
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void FixedUpdate()
